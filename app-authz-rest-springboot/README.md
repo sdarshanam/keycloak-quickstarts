@@ -91,7 +91,7 @@ on behalf of user `jdoe`, just make sure to change both `username` and `password
 
 ```bash
  export access_token=$(\
-    curl -X POST http://localhost:8180/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
+    curl -X POST http://ory-hydra.nia.snaplogic.com:8080/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
     -H 'Authorization: Basic YXBwLWF1dGh6LXJlc3Qtc3ByaW5nYm9vdDpzZWNyZXQ=' \
     -H 'content-type: application/x-www-form-urlencoded' \
     -d 'username=alice&password=alice&grant_type=password' | jq --raw-output '.access_token' \
@@ -124,7 +124,7 @@ To obtain an RPT, you must first exchange an OAuth2 Access Token for a RPT by in
 
 ```bash
 export rpt=$(curl -X POST \
- http://localhost:8180/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
+ http://ory-hydra.nia.snaplogic.com:8080/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
  -H "Authorization: Bearer "$access_token \
  --data "grant_type=urn:ietf:params:oauth:grant-type:uma-ticket" \
  --data "audience=app-authz-rest-springboot" \
@@ -139,7 +139,7 @@ As an alternative, you can also obtain permissions for any resource protected by
 
 ```bash
 export rpt=$(curl -X POST \
- http://localhost:8180/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
+ http://ory-hydra.nia.snaplogic.com:8080/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
  -H "Authorization: Bearer "$access_token \
  --data "grant_type=urn:ietf:params:oauth:grant-type:uma-ticket" \
  --data "audience=app-authz-rest-springboot" | jq --raw-output '.access_token' \

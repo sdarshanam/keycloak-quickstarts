@@ -67,7 +67,7 @@ the quickstarts you need to do this prior to continuing.
 ## <a id="add-roles-user"></a>Create Roles and User
 
 To be able to use the examples you need to create some roles as well as at least one sample user. To do first this open
-the <span>Keycloak</span> admin console ([localhost:8180/auth/admin](http://localhost:8180/auth/admin) or http://&lt;HOSTNAME&gt;:8080/auth/admin) and
+the <span>Keycloak</span> admin console ([localhost:8180/auth/admin](http://ory-hydra.nia.snaplogic.com:8080/auth/admin) or http://&lt;HOSTNAME&gt;:8080/auth/admin) and
 login with the admin user you created in the [add admin user](#add-admin) section.
 
 Start by creating a user role:

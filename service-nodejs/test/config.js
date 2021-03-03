@@ -1,4 +1,4 @@
-var baseUrl = 'http://localhost:8180/auth';
+var baseUrl = 'http://ory-hydra.nia.snaplogic.com:8080/auth';
 
 module.exports = {
   registration: {

@@ -1,7 +1,7 @@
 {
   "realm": "master",
   "bearer-only": true,
-  "auth-server-url": "http://localhost:8180/auth",
+  "auth-server-url": "http://ory-hydra.nia.snaplogic.com:8080/auth",
   "ssl-required": "external",
   "resource": "fuse-service-camel"
 }

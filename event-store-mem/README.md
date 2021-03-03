@@ -20,12 +20,12 @@ To configure and enable the event store provider manually add default provider t
         <default-provider>in-mem</default-provider>
     </spi>
     ````
-Then go to [Events Config](http://localhost:8180/auth/admin/master/console/#/realms/master/events-settings) tab in the admin console and enable login events and admin events by a toggle buttons. You can configure what event types should be stored. Save the changes afterwards.
+Then go to [Events Config](http://ory-hydra.nia.snaplogic.com:8080/auth/admin/master/console/#/realms/master/events-settings) tab in the admin console and enable login events and admin events by a toggle buttons. You can configure what event types should be stored. Save the changes afterwards.
 
 To apply changes in the configuration file restart the server.
 
-When you have the example deployed and configured go to [Login Events](http://localhost:8180/auth/admin/master/console/#/realms/master/events) tab in the admin console where you can see login events showed from the Event store provider.
-Similarly in [Admin Events](http://localhost:8180/auth/admin/master/console/#/realms/master/admin-events) tab you can see generated admin events. To generate an admin event you can for example create a user.
+When you have the example deployed and configured go to [Login Events](http://ory-hydra.nia.snaplogic.com:8080/auth/admin/master/console/#/realms/master/events) tab in the admin console where you can see login events showed from the Event store provider.
+Similarly in [Admin Events](http://ory-hydra.nia.snaplogic.com:8080/auth/admin/master/console/#/realms/master/admin-events) tab you can see generated admin events. To generate an admin event you can for example create a user.
 
 If you restart the server again all the events will be gone because they haven't been persisted in the database but stored only in memory.
 

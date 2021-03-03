@@ -95,7 +95,7 @@ on behalf of user `jdoe`, just make sure to change both `username` and `password
 
 ```bash
  export access_token=$(\
-    curl -X POST http://localhost:8180/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
+    curl -X POST http://ory-hydra.nia.snaplogic.com:8080/auth/realms/spring-boot-quickstart/protocol/openid-connect/token \
     -H 'Authorization: Basic YXBwLWF1dGh6LXJlc3QtZW1wbG95ZWU6c2VjcmV0' \
     -H 'content-type: application/x-www-form-urlencoded' \
     -d 'username=alice&password=alice&grant_type=password' | jq --raw-output '.access_token' \

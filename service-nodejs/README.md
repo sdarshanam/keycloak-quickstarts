@@ -32,7 +32,7 @@ Configuration in <span>Keycloak</span>
 
 Prior to running the quickstart you need to import the *quickstart* realm. Clicking on the below link will bring you to the create realm page in the Admin UI.
 
-[http://localhost:8180/auth/admin/master/console/#/create/realm](http://localhost:8180/auth/admin/master/console/#/create/realm)
+[http://ory-hydra.nia.snaplogic.com:8080/auth/admin/master/console/#/create/realm](http://ory-hydra.nia.snaplogic.com:8080/auth/admin/master/console/#/create/realm)
 
 Import the quickstart-realm.json file that is in the *keycloak-quickstarts/* directory.
 

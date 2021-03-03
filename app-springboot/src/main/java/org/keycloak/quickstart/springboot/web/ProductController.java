@@ -45,7 +45,7 @@ public class ProductController {
 	public String handleCustomersRequest(Principal principal, Model model) {
 			model.addAttribute("products", productService.getProducts());
 			model.addAttribute("principal",  principal);
-                        String logoutUri = KeycloakUriBuilder.fromUri("http://localhost:8180/auth").path(ServiceUrlConstants.TOKEN_SERVICE_LOGOUT_PATH)
+                        String logoutUri = KeycloakUriBuilder.fromUri("http://ory-hydra.nia.snaplogic.com:8080/auth").path(ServiceUrlConstants.TOKEN_SERVICE_LOGOUT_PATH)
             .queryParam("redirect_uri", "http://localhost:8080/products").build("quickstart").toString();
                         model.addAttribute("logout",  logoutUri);
 			return "products";

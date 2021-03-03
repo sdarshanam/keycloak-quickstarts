@@ -401,7 +401,7 @@
         <!-- The following configuration must be edited -->
             <secure-deployment name="vanilla.war">
                 <realm>quickstart</realm>
-                <auth-server-url>http://localhost:8180/auth</auth-server-url>
+                <auth-server-url>http://ory-hydra.nia.snaplogic.com:8080/auth</auth-server-url>
                 <ssl-required>EXTERNAL</ssl-required>
                 <resource>vanilla</resource>
                 <credential name="secret">secret</credential>

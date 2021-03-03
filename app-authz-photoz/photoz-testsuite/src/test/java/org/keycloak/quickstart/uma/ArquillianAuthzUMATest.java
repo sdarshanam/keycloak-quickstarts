@@ -70,7 +70,7 @@ public class ArquillianAuthzUMATest {
     private static final String JS_POLICIES = "photoz-js-policies";
 
     public static final String TEST_REALM = "photoz";
-    public static final String KEYCLOAK_URL = "http://localhost:8180/auth";
+    public static final String KEYCLOAK_URL = "http://ory-hydra.nia.snaplogic.com:8080/auth";
     public static final FluentTestsHelper testHelper = new FluentTestsHelper(KEYCLOAK_URL,
             FluentTestsHelper.DEFAULT_ADMIN_USERNAME,
             FluentTestsHelper.DEFAULT_ADMIN_PASSWORD,
