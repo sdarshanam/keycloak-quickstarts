@@ -110,15 +110,15 @@
     {
       "clientId": "photoz-html5-client",
       "enabled": true,
-      "adminUrl": "http://localhost:8080/photoz-html5-client",
-      "baseUrl": "http://localhost:8080/photoz-html5-client",
+      "adminUrl": "http://ory-hydra.nia.snaplogic.com:8380/photoz-html5-client",
+      "baseUrl": "http://ory-hydra.nia.snaplogic.com:8380/photoz-html5-client",
       "publicClient": true,
       "consentRequired" : true,
       "fullScopeAllowed" : true,
       "redirectUris": [
-        "http://localhost:8080/photoz-html5-client/*"
+        "http://ory-hydra.nia.snaplogic.com:8380/photoz-html5-client/*"
       ],
-      "webOrigins": ["http://localhost:8080"]
+      "webOrigins": ["http://ory-hydra.nia.snaplogic.com:8380"]
     },
     {
       "clientId": "photoz-restful-api",
@@ -127,9 +127,9 @@
       "baseUrl": "http://localhost:8080/photoz-restful-api",
       "authorizationServicesEnabled" : true,
       "redirectUris": [
-        "http://localhost:8080/photoz-html5-client"
+        "http://ory-hydra.nia.snaplogic.com:8380/photoz-html5-client"
       ],
-      "webOrigins" : ["http://localhost:8080"]
+      "webOrigins" : ["http://ory-hydra.nia.snaplogic.com:8380"]
     }
   ]
 }

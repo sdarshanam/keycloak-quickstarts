@@ -44,6 +44,7 @@
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <configuration>
                     <skip>false</skip>
+                    <javaOpts>-Djboss.http.port=8380</javaOpts>
                 </configuration>
             </plugin>
         </plugins>
